@@ -25,13 +25,13 @@ public class Fbselected {
 		WebElement femaleRadioButton = driver.findElement(By.xpath("//input[@value='1']"));
 
 		// Select the male radio button
-		maleRadioButton.click();
+		//maleRadioButton.click();
 
 		// Verify that the male radio button is enabled
-		if (maleRadioButton.isEnabled()) {
-		    System.out.println("Male radio button is enabled.");
+		if (maleRadioButton.isSelected()) {
+		    System.out.println("Male radio button is SELECTED.");
 		} else {
-		    System.out.println("Male radio button is not enabled.");
+		    System.out.println("Male radio button is not SELECTED.");
 		}
 
 		// Verify that the female radio button is enabled
